@@ -86,8 +86,8 @@ if __name__ == "__main__":
     pam_vsftpd(vuser_list_db)
     #4.创建虚拟用户配置文件
     vuser_config(vuser_name_passws,vuser_conf)
-    #5.创建虚拟用户寄托的实体用户
-    #create_user(testftp)
+    #5.创建虚拟用户绑定的实体用户
+    create_user(testftp)
     #6.vsftp基本配置后面添加虚拟用户配置
     Addvsftpdconfig(testftp, vuser_conf,listenport)
     #7,自己更改米名用户 和启动服务器。

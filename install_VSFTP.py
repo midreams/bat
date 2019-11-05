@@ -91,4 +91,4 @@ if __name__ == "__main__":
     #6.vsftp基本配置后面添加虚拟用户配置
     Addvsftpdconfig(testftp, vuser_conf,listenport)
     #7,自己更改米名用户 和启动服务器。
-    print('配置完成！')
+    print('配置完成！,请检查iptables，用被动模式链接，已经测试ok！')

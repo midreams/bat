@@ -1,35 +1,4 @@
-  ShadowsocksR 一键管理脚本 [v2.0.38]
-  ---- Toyo | doub.io/ss-jc42 ----
 
-  1. 安装 ShadowsocksR
-  2. 更新 ShadowsocksR
-  3. 卸载 ShadowsocksR
-  4. 安装 libsodium(chacha20)
-————————————
-  5. 查看 账号信息
-  6. 显示 连接信息
-  7. 设置 用户配置
-  8. 手动 修改配置
-  9. 切换 端口模式
-————————————
- 10. 启动 ShadowsocksR
- 11. 停止 ShadowsocksR
- 12. 重启 ShadowsocksR
- 13. 查看 ShadowsocksR 日志
-————————————
- 14. 其他功能
- 15. 升级脚本
-
- 当前状态: 已安装 并 已启动
- 当前模式: 单端口
-
-请输入数字 [1-15]：^Z
-[2]+  Stopped                 sh ssr.sh
-[root@Test2020 home]# ls
-bat                 direct       GeoIP-1.6.11         goaccess-1.3.tar.gz  IPFS         only   Python-3.7.2      rewriter.rules  ss5-3.8.9-8.tar.gz  swarm.key
-blocked             docker       GeoIP-1.6.11.tar.gz  hosts                lei          prox   Python-3.7.2.tgz  sn.config       ssr.sh              testftp
-clear_cdn_cache.sh  docker-test  github_bat           install_IPFS.py      news.gz.tar  proxy  resolve.rules     ss5-3.8.9       stop                www
-[root@Test2020 home]# cat ssr.sh
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH

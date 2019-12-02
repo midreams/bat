@@ -1,7 +1,7 @@
 #!/bin/python
 # # -*- coding:UTF-8 -*-
 import os
-"""
+#"""
 #######---lei insall VSftpd and Vuser login   update 2019-4.10  V2 ------#######################
 #  pyhton3.7-2.7 centos7.4(64X)   install vsftpd  and config vuser
 #  对应配置文件都在/etc/vsftpd/...
@@ -12,7 +12,7 @@ import os
 #运行之后  1.修改配置文件anonymous_enable=YES  YES改为NO
 #          2.FTP目录可以后创建： 给目录文件-->实体用户赋权 即“testftp”   chown testftp:ftp -R  xxx 
 #          3.启动
-"""
+#"""
 
 vuser_name_passws=[
     ['lili','abc123477','/home/www/html'],

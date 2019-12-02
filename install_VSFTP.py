@@ -1,5 +1,5 @@
 #!/bin/python
-# # -*- coding:UTF-8 -*-
+# -*- coding: utf-8 -*-
 import os
 #"""
 #######---lei insall VSftpd and Vuser login   update 2019-4.10  V2 ------#######################

@@ -74,6 +74,10 @@ def Addvsftpdconfig(testftp,vuser_conf,listenport):
         sconf.write('allow_writeable_chroot=YES' + '\n')
         sconf.write('virtual_use_local_privs=YES' + '\n')
         sconf.write('#虚拟用户和本地用户有相同的权限' + '\n')
+        sconf.write('pasv_enable=YES' + '\n')
+        sconf.write('pasv_min_port=6666' + '\n')
+        sconf.write('pasv_max_port=7000' + '\n')
+        sconf.write('pasv_promiscuous=YES ' + '\n')
 
 
 
@@ -91,4 +95,6 @@ if __name__ == "__main__":
     #6.vsftp基本配置后面添加虚拟用户配置
     Addvsftpdconfig(testftp, vuser_conf,listenport)
     #7,自己更改米名用户 和启动服务器。
-    print('配置完成！,请检查iptables，用被动模式链接，已经测试ok！')
+    print('配置完成！,请检查iptables，用被动模式链接，放开6666-7000,已经测试ok！')
+    print('修改配置文件anonymous_enable=YES  YES改为NO！ 给目录文件-->实体用户赋权 即“testftp”   chown testftp:ftp -R  xxx ')
+    print('如果是云主机，需要添加设置：”pasv_addr_resolve=YES ，pasv_address=公网IP“ ！')

@@ -77,7 +77,7 @@ def Addvsftpdconfig(testftp,vuser_conf,listenport):
         sconf.write('pasv_enable=YES' + '\n')
         sconf.write('pasv_min_port=6666' + '\n')
         sconf.write('pasv_max_port=7000' + '\n')
-        sconf.write('pasv_promiscuous=YES ' + '\n')
+        sconf.write('pasv_promiscuous=YES' + '\n')
 
 
 

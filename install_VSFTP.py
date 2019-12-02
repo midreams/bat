@@ -5,13 +5,13 @@ import os
 #######---lei insall VSftpd and Vuser login   update 2019-4.10  V2 ------#######################
 #  pyhton3.7-2.7 centos7.4(64X)   install vsftpd  and config vuser
 #  对应配置文件都在/etc/vsftpd/...
-w+：先清空所有文件内容，然后写入，然后你才可以读取你写入的内容
-r+：不清空内容，可以同时读和写入内容。 写入文件的最开始
-a+：追加写，所有写入的内容都在文件的最后
-测试成功
-运行之后  1.修改配置文件anonymous_enable=YES  YES改为NO
-          2.FTP目录可以后创建： 给目录文件-->实体用户赋权 即“testftp”   chown testftp:ftp -R  xxx 
-          3.启动
+#w+：先清空所有文件内容，然后写入，然后你才可以读取你写入的内容
+#r+：不清空内容，可以同时读和写入内容。 写入文件的最开始
+#a+：追加写，所有写入的内容都在文件的最后
+#测试成功
+#运行之后  1.修改配置文件anonymous_enable=YES  YES改为NO
+#          2.FTP目录可以后创建： 给目录文件-->实体用户赋权 即“testftp”   chown testftp:ftp -R  xxx 
+#          3.启动
 """
 
 vuser_name_passws=[
